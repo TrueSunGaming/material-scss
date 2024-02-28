@@ -1,0 +1,53 @@
+@import "@fontsource/roboto";
+
+:root {
+    font-family: Roboto;
+    color: var(--color-text);
+}
+
+body {
+    background-color: var(--color-bg);
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+button.text {
+    border: none;
+    background: none;
+}
+
+button.elevated, button.filled, button.filled-tonal, button.outlined {
+    border-radius: 50vb;
+    padding: 10px 20px;
+    border: none;
+}
+
+button.outlined {
+    outline: 1px solid var(--color-text);
+}
+
+button.elevated, button.outlined {
+    background-color: var(--color-alt-bg);
+}
+
+button.elevated, button.outlined, button.text {
+    color: var(--color-alt);
+}
+
+button.filled {
+    background-color: var(--color-alt);
+    color: var(--color-alt-text);
+}
+
+button.filled-tonal {
+    background-color: var(--color-tonal);
+    color: var(--color-tonal-text);
+}
+
+button.elevated {
+    box-shadow: 0 1px 5px var(--color-shadow);
+}
